@@ -1,2 +1,2 @@
 # ruby-automation
-Automation framework using Ruby and cheezy / page-object
+Automation framework using Cucumber:Gherkin, Ruby, and the PageObject pattern

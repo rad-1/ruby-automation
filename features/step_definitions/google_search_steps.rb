@@ -7,12 +7,12 @@ end
 
 When(/^I search for "([^\"]*)" (with luck|without luck)$/) do |search_text, luck|
   on_page(GoogleSearchPage) do |page|
-    page.search_field = search_text
-    luck == 'with luck' ? [page.lucky_btn] : [page.search_btn]
+    page.search_text_field = search_text
+    luck == 'with luck' ? [page.feeling_lucky_btn] : [page.google_search_btn]
   end
 end
 
-Then(/^I? (see results for "([^\"]*)" on the Google Results page|am taken to a\
- "([^\"]*)" related website)$/) do |search_text|
+Then(/^I? (am taken to a "([^\"]*)" related website|see results for "([^\"]*)" \
+on the Google Results page)$/) do |search_text|
   expect(@browser.text).to include(search_text)
 end

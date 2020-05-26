@@ -1,16 +1,19 @@
 # frozen_string_literal: true
 
 Given(/^I am on the Google Search page$/) do
-  @browser.goto 'https://www.google.com/'
+  GoogleSearchPage.new(@browser)
+  visit_page GoogleSearchPage
 end
 
 When(/^I search for "([^\"]*)" (without Feeling Lucky|with Feeling Lucky)$/) do
   |search_text, no_luck|
-  @browser.text_field(name: 'q').set(search_text)
-  if no_luck == 'without Feeling Lucky'
-    @browser.button(name: 'btnI').click
-  else
-    @browser.button(name: 'btnK').click
+  on_page(GoogleSearchPage) do |page|
+    page.search_field = search_text
+    if no_luck == 'without Feeling Lucky'
+      page.search_btn
+    else
+      page.lucky_btn
+    end
   end
 end
 

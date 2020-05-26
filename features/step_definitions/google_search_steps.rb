@@ -5,9 +5,9 @@ Given(/^I am on the Google Search page$/) do
 end
 
 When(/^I search for "([^\"]*)" (without Feeling Lucky|with Feeling Lucky)$/) do
-  |search_text, luck|
+  |search_text, no_luck|
   @browser.text_field(name: 'q').set(search_text)
-  if luck == 'without Feeling Lucky'
+  if no_luck == 'without Feeling Lucky'
     @browser.button(name: 'btnI').click
   else
     @browser.button(name: 'btnK').click

@@ -21,10 +21,6 @@ jobs:
       with:
         ruby-version: 2.7.1
     - name: Install dependencies
-      run: bundle install
-    # Linting
-    - name: Rubocop checks
-      uses: gimenete/rubocop-action@1.0      
+      run: bundle install      
     - name: Run tests
       run: bundle exec rake
-  

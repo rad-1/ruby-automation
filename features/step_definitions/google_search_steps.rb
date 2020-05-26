@@ -5,15 +5,10 @@ Given(/^I am on the Google Search page$/) do
   visit_page GoogleSearchPage
 end
 
-When(/^I search for "([^\"]*)" (without Feeling Lucky|with Feeling Lucky)$/) do
-  |search_text, no_luck|
+When(/^I search for "([^\"]*)" (with luck|without luck)$/) do |search_text, luck|
   on_page(GoogleSearchPage) do |page|
     page.search_field = search_text
-    if no_luck == 'without Feeling Lucky'
-      page.search_btn
-    else
-      page.lucky_btn
-    end
+    luck == 'with luck' ? [page.lucky_btn] : [page.search_btn]
   end
 end
 

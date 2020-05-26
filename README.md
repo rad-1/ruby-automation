@@ -1,4 +1,4 @@
-# ruby-automation
+# Ruby Automation
 Automation framework written in Ruby and Cucumber:Gherkin
 
 ## Requirements

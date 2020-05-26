@@ -6,7 +6,7 @@ Feature: Google Search
   Background:
     Given I am on the Google Search page
 
-  Scenario: Perform a Google Search ('Feeling Lucky')
+  Scenario: Perform a Google Search ("Feeling Lucky")
     When I search for "Puppies" with luck
     Then I see results for "Puppies" on the Google Results page
 

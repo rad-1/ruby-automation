@@ -2,11 +2,8 @@
 Automation framework written in Ruby and Cucumber:Gherkin
 
 ## Requirements
-### Ruby
 * Ruby v2.7.0
-### Google Chrome
 * Google Chrome v83.0.4103.39
-### ChromeDriver
 * ChromeDriver 83.0.4103.39
 
 ## Support

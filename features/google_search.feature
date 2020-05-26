@@ -6,10 +6,10 @@ Feature: Google Search
   Background:
     Given I am on the Google Search page
 
-  Scenario: Perform a Google Search with Feeling Lucky
-    When I search for "Puppies" with Feeling Lucky
+  Scenario: Perform a Google Search ('Feeling Lucky')
+    When I search for "Puppies" with luck
     Then I see results for "Puppies" on the Google Results page
 
-  Scenario: Perform a Google Search without Feeling Lucky
-    When I search for "Kittens" without Feeling Lucky
+  Scenario: Perform a Google Search
+    When I search for "Kittens" without luck
     Then I am taken to a "Kittens" related website

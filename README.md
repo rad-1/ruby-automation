@@ -1,5 +1,5 @@
 # Ruby Automation
-Automation framework written in Ruby and Cucumber Gherkin
+Automation framework written in Ruby and Cucumber Gherkin. Aims to follow Cheezy's PageObject implementation pattern.
 
 ## Requirements
 * Ruby v2.7.0

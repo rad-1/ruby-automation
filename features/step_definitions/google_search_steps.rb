@@ -4,8 +4,7 @@ Given(/^I am on the Google Search page$/) do
   @browser.goto 'https://www.google.com/'
 end
 
-When(/^I search for "([^\"]*)" (without Feeling Lucky|with Feeling Lucky)$/) do
-  |search_text, luck|
+When(/^I search for "([^\"]*)" (without Feeling Lucky|with Feeling Lucky)$/) do |search_text, luck|
   @browser.text_field(name: 'q').set(search_text)
   if luck == 'with Feeling Lucky'
     @browser.button(name: 'btnI').click
@@ -14,8 +13,7 @@ When(/^I search for "([^\"]*)" (without Feeling Lucky|with Feeling Lucky)$/) do
   end
 end
 
-Then(/^I see results for "([^\"]*)" on the Google Results page| $/) do
-   |search_text|
+Then(/^I see results for "([^\"]*)" on the Google Results page| $/) do |search_text|
   expect(@browser.text).to include(search_text)
 end
 

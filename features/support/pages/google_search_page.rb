@@ -6,7 +6,7 @@ class GoogleSearchPage
   include PageObject
 
   page_url 'https://www.google.com/'
-  text_field(:search_field, name: 'q')
-  button(:search_btn, name: 'btnI')
-  button(:lucky_btn, name: 'btnK')
+  text_field(:search_text_field, name: 'q')
+  button(:google_search_btn, name: 'btnK')
+  button(:feeling_lucky_btn, name: 'btnI')
 end

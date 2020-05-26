@@ -8,8 +8,8 @@ Feature: Google Search
 
   Scenario: Perform a Google Search ("Feeling Lucky")
     When I search for "Puppies" with luck
-    Then I see results for "Puppies" on the Google Results page
+    Then I am taken to a "Puppies" related website
 
   Scenario: Perform a Google Search
     When I search for "Kittens" without luck
-    Then I am taken to a "Kittens" related website
+    Then I see results for "Kittens" on the Google Results page

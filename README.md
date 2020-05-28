@@ -1,15 +1,16 @@
 # Ruby Automation
 Automation framework written in Ruby and Cucumber Gherkin. Aims to follow Cheezy's PageObject implementation pattern.
 
+## Getting Started (macOS)
+Before continuing, I highly recommend using the following tools to make your life easier:
+* [Homebrew](https://brew.sh/) for installing and managing packages
+* [rbenv](https://github.com/rbenv/rbenv) to pick a Ruby version for your application and guarantee that your development environment matches production
+* [Bundler](https://bundler.io/) to avoid dependency hell and ensure that the gems you need are present in development
+
 ## Requirements (macOS)
 * [Ruby v2.7.0](https://www.ruby-lang.org/en/downloads/)
 * [Google Chrome v83.0.4103.39](https://www.google.com/chrome/)
 * [ChromeDriver 83.0.4103.39](https://chromedriver.chromium.org/downloads)
-
-## Recommendations (macOS)
-* [Homebrew](https://brew.sh/) for installing and managing packages
-* [rbenv](https://github.com/rbenv/rbenv) to pick a Ruby version for your application and guarantee that your development environment matches production
-* [Bundler](https://bundler.io/) to avoid dependency hell and ensure that the gems you need are present in development
 
 ## Running the Tests    
 1. Run Bundler to install gem dependencies from the Gemfile in the project's root:

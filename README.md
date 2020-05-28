@@ -2,10 +2,10 @@
 Automation framework written in Ruby and Cucumber Gherkin. Aims to follow Cheezy's PageObject implementation pattern.
 
 ## Getting Started (macOS)
-Before continuing, I highly recommend using the following tools to make your life easier:
+Before continuing, I highly recommend installing the following tools to make your life easier:
 * [Homebrew](https://brew.sh/) for installing and managing packages
 * [rbenv](https://github.com/rbenv/rbenv) to pick a Ruby version for your application and guarantee that your development environment matches production
-* [Bundler](https://bundler.io/) to avoid dependency hell and ensure that the gems you need are present in development
+* [Bundler](https://bundler.io/) after installing Ruby, to avoid dependency hell and to ensure that the gems you need are present in development
 
 ## Requirements (macOS)
 * [Ruby v2.7.0](https://www.ruby-lang.org/en/downloads/)

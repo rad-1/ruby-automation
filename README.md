@@ -1,5 +1,5 @@
 # Ruby Automation
-Automation framework written in Ruby and Cucumber Gherkin. Aims to follow Cheezy's PageObject implementation pattern.
+An automation framework written in Ruby and Cucumber Gherkin that aims to follow Cheezy's PageObject principles.
 
 ## Getting Started (macOS)
 Before continuing, I highly recommend installing the following tools to make your life easier:

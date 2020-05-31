@@ -1,13 +1,13 @@
-# Ruby Automation
+# Ruby Automation (macOS)
 An automation framework written in Ruby and Cucumber Gherkin that aims to follow Cheezy's PageObject principles.
 
-## Getting Started (macOS)
+## Getting Started
 Before continuing, I highly recommend installing the following tools to make your life easier:
 * [Homebrew](https://brew.sh/) for installing and managing packages
-* [rbenv](https://github.com/rbenv/rbenv) to pick a Ruby version for your application and guarantee that your development environment matches production
-* [Bundler](https://bundler.io/) after installing Ruby, to avoid dependency hell and to ensure that the gems you need are present in development
+* [rbenv](https://github.com/rbenv/rbenv) to easily pick and install a Ruby version for your application
+* [Bundler](https://bundler.io/), after installing Ruby, to avoid dependency hell and to ensure that the gems you need are present in development
 
-## Requirements (macOS)
+## Requirements
 * [Ruby v2.7.0](https://www.ruby-lang.org/en/downloads/)
 * [Google Chrome v83.0.4103.39](https://www.google.com/chrome/)
 * [ChromeDriver 83.0.4103.39](https://chromedriver.chromium.org/downloads)

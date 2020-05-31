@@ -23,6 +23,7 @@ Before continuing, I highly recommend installing the following tools to make you
 2. Run the tests using the `cucumber` command. All `.feature` files are located in the `features` directory:
 
     ~~~ sh
+    $ cd ruby-automation
     $ cucumber /features/google_search.feature
     ~~~
 

@@ -16,14 +16,14 @@ Before continuing, I highly recommend installing the following tools to make you
 1. Run Bundler to install gem dependencies from the Gemfile in the project's root:
 
     ~~~ sh
-    $ cd ruby-automation
+    $ cd /your/project/path
     $ gem install bundler
     ~~~
 
 2. Run the tests using the `cucumber` command. All `.feature` files are located in the `features` directory:
 
     ~~~ sh
-    $ cd ruby-automation
+    $ cd /your/project/path
     $ cucumber /features/google_search.feature
     ~~~
 

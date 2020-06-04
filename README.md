@@ -7,7 +7,7 @@ An automation framework written in Ruby and Cucumber Gherkin that aims to follow
 * [Ruby v2.7.0](https://www.ruby-lang.org/en/downloads/)
 * [Bundler](https://bundler.io/)
 * [Google Chrome v83.0.4103.39](https://www.google.com/chrome/)
-* [ChromeDriver 83.0.4103.39](https://chromedriver.chromium.org/downloads)
+* [ChromeDriver v83.0.4103.39](https://chromedriver.chromium.org/downloads)
 
 ## Installation 
 1. Install Homebrew with the following command:
@@ -66,8 +66,16 @@ An automation framework written in Ruby and Cucumber Gherkin that aims to follow
     ~~~ sh
     $ gem install bundler
     ~~~
-    
-10. Installation complete!
+
+10. Download and unpack [ChromeDriver v83.0.4103.39](https://chromedriver.storage.googleapis.com/index.html?path=83.0.4103.39/). You should now see a ChromeDriver executable file.
+
+11. Move ChromeDrive to your `/usr/local/bin` directory:
+
+    ~~~ sh
+    $ mv chromedriver /usr/local/bin
+    ~~~
+ 
+12. Installation complete!
 
 ## Running the Tests
 1. Run Bundler to install gem dependencies from the Gemfile in your project's root:

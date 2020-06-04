@@ -1,23 +1,80 @@
 # Ruby Automation (macOS)
 An automation framework written in Ruby and Cucumber Gherkin that aims to follow Cheezy's PageObject principles.
 
-## Getting Started
-Before continuing, I highly recommend installing the following tools to make your life easier:
-* [Homebrew](https://brew.sh/) for installing and managing packages
-* [rbenv](https://github.com/rbenv/rbenv) to easily pick and install a Ruby version for your application
-* [Bundler](https://bundler.io/), after installing Ruby, to avoid dependency hell and to ensure that the gems you need are present in development
-
 ## Requirements
+* [Homebrew](https://brew.sh/)
+* [rbenv](https://github.com/rbenv/rbenv)
 * [Ruby v2.7.0](https://www.ruby-lang.org/en/downloads/)
+* [Bundler](https://bundler.io/)
 * [Google Chrome v83.0.4103.39](https://www.google.com/chrome/)
 * [ChromeDriver 83.0.4103.39](https://chromedriver.chromium.org/downloads)
 
-## Running the Tests    
-1. Run Bundler to install gem dependencies from the Gemfile in the project's root:
+## Installation 
+1. Install Homebrew with the following command:
+
+    ~~~ sh
+    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ~~~
+
+2. Brew update to make sure Homebrew is up to date:
+
+    ~~~ sh
+    $ brew update
+    ~~~
+    
+3. Brew doctor to make sure that your system is ready to brew:
+
+    ~~~ sh
+    $ brew doctor
+    ~~~
+
+4. Add Homebrew’s location to your $PATH in your .bash_profile or .zshrc file:
+
+    ~~~ sh
+    $ export PATH="/usr/local/bin:$PATH"
+    ~~~
+    
+5. Install rbenv and setup rbenv in your shell:
+
+    ~~~ sh
+    $ brew install rbenv
+    $ rbenv init
+    ~~~
+    
+    Note: Make sure to close your current terminal windows and open a new one so that your changes take effect.
+    
+6. Use Homebrew to install the ruby-build command-line utility to make life easier when installing a new Ruby version:
+
+    ~~~ sh
+    $ brew install ruby-build
+    ~~~
+
+7. Now use rbenv to install Ruby v2.7.0:
+
+    ~~~ sh
+    $ rbenv install 2.7.0
+    ~~~
+
+8. Set Ruby v2.7.0 as the global Ruby version:
+    
+    ~~~ sh
+    $ rbenv global 2.7.0
+    ~~~
+    
+9. Now that Ruby is installed, it's time to install the Bundler gem: 
+
+    ~~~ sh
+    $ gem install bundler
+    ~~~
+    
+10. Installation complete!
+
+## Running the Tests
+1. Run Bundler to install gem dependencies from the Gemfile in your project's root:
 
     ~~~ sh
     $ cd /your/project/path
-    $ gem install bundler
+    $ bundle install
     ~~~
 
 2. Run the tests using the `cucumber` command. All `.feature` files are located in the `features` directory:

@@ -13,7 +13,7 @@ An automation framework written in Ruby and Cucumber Gherkin that aims to follow
 1. Install Homebrew with the following command:
 
     ~~~ sh
-    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     ~~~
 
 2. Brew update to make sure Homebrew is up to date:
